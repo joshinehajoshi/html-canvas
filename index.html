@@ -10,8 +10,22 @@
     <canvas
     id="myCanvas" 
     width="200" 
-    height="200">
-
+    height="200"
+    style="color:yellow; background-color:steelblue"
+    >
+    Canvas
     </canvas>
 </body>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var cty = c.getContext("2d");
+    cty.moveTo(0,200);
+    cty.lineTo(200,0)
+    cty.stroke();
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,200);
+    ctx.stroke();
+    </script>
+    
 </html>
